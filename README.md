@@ -4,6 +4,8 @@ DocCheck App Login SDK Android
 The DocCheck App Login SDK provides you with a simple to use integration of the authentication through DocCheck. 
 This is done by providing an Activity which wraps the Web flow and handles callbacks for the authentication.
 
+For more details regarding the DocCheck login product and licenses visit [our website](https://biz.doccheck.com/com/services/passwordprotection/) or request initial information via industry@doccheck.com.
+
 Installation
 ------------
 
@@ -91,3 +93,27 @@ override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) 
 Compiling
 ---------
 Executing the gradle task `applogin:build` will build the library and places the finished AAR files in the `applogin/build/outputs/aar` folder.
+
+
+## Example
+
+An example project with integration instructions can be found in the [Example Repository](https://github.com/antwerpes/dc_app_login_sdk_android_example)
+
+
+
+## Response Parameters
+
+
+| Name           |Status   |Description                                                                | Value                                                               | License Type     |
+|----------------|---------|---------------------------------------------------------------------------|---------------------------------------------------------------------|------------------|
+|login_id        |internal |login ID associated with the login                                         |e.g. 200000012345                                                    |all               |
+|appid           |internal |bundle identifier for the current app, is related to the mobile special    |e.g. "bundleidentifier"                                              |all   		    |
+|intdclanguageid |internal |internal ID that tracks the user language                                  |e.g. 148                                                             |all               |
+|strDcLanguage   |internal |iso code that tracks the user language                                     |(for Personal form). One of "de", "en"/"com", "fr", "nl", "it", "es".|all               |
+|uniquekey       |valid    |alphanumerical string that is individual per user, is passed by each login |e.g. abc_abc884e739adf439ed521720acb5b232                            |economy + business|
+|code            |valid    |Oauth2 parameter                                                           |e.g. abc884e739adf439ed521720acb5b232abc884e739adf439ed521720acb5b232|economy + business|
+|state           |valid    |Oauth2 parameter                                                           |e.g. eHxI902CC3doao1                                                 |economy + business|
+|dc_agreement    |valid    |status of confirmation of the data transfer consent form                   |0 = not confirmed; 1 = confirmed                                     |business          |
+
+Please note that additional parameters can be delivered in case of valid consent for data transfer in combination with an implemented business license. For more Details, please check the OAuth2 documentation. Thats one can be reuqested via industry@doccheck.com. 
+
