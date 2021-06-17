@@ -6,6 +6,25 @@ This is done by providing an Activity which wraps the Web flow and handles callb
 
 For more details regarding the DocCheck login product and licenses visit [our website](https://biz.doccheck.com/com/services/passwordprotection/) or request initial information via industry@doccheck.com.
 
+## Requirements
+
+### Android
+
+- Min SDK Version 26
+- Kotlin Enabled
+- AndroidX enabled
+
+### DocCheck Login ID
+In order to ensure smooth integration and functioning always adhere to using the respective framework. Before you can implement the DocCheck Login in your app, you will need
+to set up a new login in CReaM (http://crm.doccheck.com/com/). For detailed instructions please read the technical handbook under http://biz.doccheck.com/com/services/passwordprotection/ (chapter 2.2.3). When a new login has been created, please add the bundle identifier (for iOS) or the package name (for Android) in the destination URL. This process in general runs as follows: topleveldomain.companyname.appname 
+
+Example for input in the target URL in CReaM: 
+```shell
+doccheck://login?appid=bundleidentifier
+```
+### DocCheck License
+For mobile applications a mobile license is required.To get more details about the different packages (basic, economy and business) as well as booking process please contact industry@doccheck.com. 
+
 Installation
 ------------
 
