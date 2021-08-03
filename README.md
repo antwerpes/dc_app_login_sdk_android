@@ -4,7 +4,7 @@ DocCheck App Login SDK Android
 The DocCheck App Login SDK provides you with a simple to use integration of the authentication through DocCheck. 
 This is done by providing an Activity which wraps the Web flow and handles callbacks for the authentication.
 
-For more details regarding the DocCheck login product and licenses visit [our website](https://biz.doccheck.com/com/services/passwordprotection/) or request initial information via industry@doccheck.com.
+For more details regarding the DocCheck login product and licenses visit [our website](https://more.doccheck.com/en/industry/) or request initial information via industry@doccheck.com.
 
 ## Requirements
 
@@ -15,8 +15,7 @@ For more details regarding the DocCheck login product and licenses visit [our we
 - AndroidX enabled
 
 ### DocCheck Login ID
-In order to ensure smooth integration and functioning always adhere to using the respective framework. Before you can implement the DocCheck Login in your app, you will need
-to set up a new login in CReaM (http://crm.doccheck.com/com/). For detailed instructions please read the technical handbook under http://biz.doccheck.com/com/services/passwordprotection/ (chapter 2.2.3). When a new login has been created, please add the bundle identifier (for iOS) or the package name (for Android) in the destination URL. This process in general runs as follows: topleveldomain.companyname.appname 
+In order to ensure smooth integration and functioning always adhere to using the respective framework. Before you can implement the DocCheck Login in your app, you will need to set up a new login in CReaM (http://crm.doccheck.com/com/). For detailed instructions please read the technical manual in the download section of https://more.doccheck.com/en/industry/ (chapter 2.2.3). When a new login has been created, please add the bundle identifier (for iOS) or the package name (for Android) in the destination URL. This process in general runs as follows: topleveldomain.companyname.appname 
 
 Example for input in the target URL in CReaM: 
 ```shell
