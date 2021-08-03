@@ -15,7 +15,7 @@ For more details regarding the DocCheck login product and licenses visit [our we
 - AndroidX enabled
 
 ### DocCheck Login ID
-In order to ensure smooth integration and functioning always adhere to using the respective framework. Before you can implement the DocCheck Login in your app, you will need to set up a new login in CReaM (http://crm.doccheck.com/com/). For detailed instructions please read the technical manual in the download section of https://more.doccheck.com/en/industry/ (chapter 2.2.3). When a new login has been created, please add the bundle identifier (for iOS) or the package name (for Android) in the destination URL. This process in general runs as follows: topleveldomain.companyname.appname 
+In order to ensure smooth integration and functioning always adhere to using the respective framework. Before you can implement the DocCheck Login in your app, you will need to set up a new login in CReaM (http://crm.doccheck.com/com/). For detailed instructions please read the technical manual in the download section of https://more.doccheck.com/en/industry/ (chapter 2.2.3). When a new login has been created, please add the bundle identifier (for iOS) or the package name (for Android) in the destination URL. This process in general runs as follows: topleveldomain.companyname.appname 
 
 Example for input in the target URL in CReaM: 
 ```shell
