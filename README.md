@@ -135,14 +135,18 @@ An example project with integration instructions can be found in the [Example Re
 
 Please note that additional parameters can be delivered in case of valid consent for data transfer in combination with an implemented business license. For more Details, please check the OAuth2 documentation. Thats one can be reuqested via app.industry@doccheck.com. 
 
-## Profession Routing
-Starting with the economy license, a profession routing can be implemented. Routing parameters must be configured within CReaM via the login configuration (step 4 "Specials" > configure profession routing) 
+## Parameter Routing 
+Starting with the economy license, a routing by parameter, language or country can be configured. Routing parameters must be configured within CReaM via the login configuration (step 4 "Specials" > configure profession/languag/country routing) 
 Within CReaM a individual value can be definied for a certain profession. Those values will be passed via the login framework towards your mobile application.
 
 The parameter can be defined as follows: 
 ```
 &profession=physician
 ```
+```
+&country=germany
+```
+
 Watchouts: 
 - parameter must be configured "paramater=value", otherwise it won't be parsed as an parameter in the response
 - Don't forget to implement a fallback if no parameter is added via CReaM
